@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>E-Trains Booking</title>
+<link rel="stylesheet" href="UserHome_Css.css">
+<style>
+  /* Minor styling adjustments */
+  header {
+    background-color: #f9f9f9;
+    padding: 15px 10px;
+  }
+  .nav-item {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  .tab {
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  .tab.red {
+    border: 2px solid #d9534f;
+    background-color: #f9e6e6;
+  }
+  form input[type="text"] {
+    width: 90%;
+    padding: 8px;
+    margin: 8px 0;
+    font-size: 1em;
+  }
+  form input[type="submit"] {
+    background-color: #d9534f;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+  }
+  form input[type="submit"]:hover {
+    background-color: #c9302c;
+  }
+</style>
+</head>
+<body>
+	<header>
+		<h1 class="hd">National Ticket Booking Spot</h1>
+		<nav>
+			<div class="nav-item"><a href="userhome">Home</a></div>
+			<div class="nav-item"><a href="userviewtrainfwd">View Trains</a></div>
+			<div class="nav-item"><a href="trainbwstnfwd">Trains Between Stations</a></div>
+			<div class="nav-item"><a href="bookingdetails">Booking History</a></div>
+			<div class="nav-item"><a href="fareenqfwd">Fare Enquiry</a></div>
+			<div class="nav-item"><a href="useravailfwd">Seat Availability</a></div>
+			<div class="nav-item"><a href="usersearchtrain">Search by Train No.</a></div>
+			<div class="nav-item"><a href="userprofile">Profile</a></div>
+			<div class="nav-item"><a href="userlogout">Logout</a></div>
+		</nav>
+	</header>
+
+	<section class="tab red">
+		<h2 class="menu">Find Trains Between Stations</h2>
+		<form action="trainbwstn" method="post">
+			<label for="fromstation">From Station:</label><br />
+			<input type="text" id="fromstation" name="fromstation" placeholder="Enter departure station" required><br />
+			<label for="tostation">To Station:</label><br />
+			<input type="text" id="tostation" name="tostation" placeholder="Enter destination station" required><br /><br />
+			<input type="submit" value="Search Trains">
+		</form>
+	</section>
+</body>
+</html>

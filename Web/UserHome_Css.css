@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('sandy.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 8%;
+  margin-right: 8%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hd {
+  text-align: center;
+  padding: 12px;
+  margin-left: 12%;
+  margin-right: 6%;
+  color: #b30059;
+  font-weight: 900;
+  font-size: 42px;
+  text-shadow: 1px 1px 3px #eee;
+}
+
+.main {
+  border: 2px solid #333;
+  background-color: #fff9db;
+  border-radius: 12px;
+  text-align: center;
+  margin-left: 30%;
+  margin-right: 30%;
+  padding: 15px;
+  margin-bottom: 15px;
+  color: #cc0000;
+  width: 620px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu {
+  border: 1.5px solid #444;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  color: #228b22;
+  font-weight: 700;
+  font-size: 15px;
+  text-align: center;
+  display: inline-block;
+  margin: auto;
+  padding: 7px 12px;
+  margin-top: 8px;
+  transition: color 0.3s ease;
+}
+
+.menu:hover {
+  color: #d9534f;
+  cursor: pointer;
+}
+
+a:link {
+  color: #2e8b57;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #d43f3a;
+  text-decoration: underline;
+}
+
+.tab {
+  border: 2px solid #b36b00;
+  border-radius: 18px;
+  background-color: #fff0d1;
+  margin-left: 18%;
+  width: 820px;
+  color: #3b3b3b;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 12px;
+  padding: 12px;
+  margin-top: 12px;
+  box-shadow: 1px 1px 5px #d2b48c;
+}
+
+.yel {
+  color: #ffd700;
+}
+
+.red {
+  color: #cc000

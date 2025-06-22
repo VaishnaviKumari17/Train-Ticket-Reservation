@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>View Trains - E-Trains</title>
+    <link rel="stylesheet" href="UserHome_Css.css">
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="hd">National Ticket Booking Spot</h1>
+        <div class="home">
+            <p class="menu"><a href="AdminHome.html">Home</a></p>
+        </div>
+        <div class="home">
+            <p class="menu"><a href="addtrainfwd">Add Train</a></p>
+        </div>
+        <div class="home">
+            <p class="menu"><a href="adminlogout">Logout</a></p>
+        </div>
+    </header>
+
+    <h2>List of All Trains</h2>
+
+    <table>
+        <tr>
+            <th>Train Number</th>
+            <th>Train Name</th>
+            <th>From Station</th>
+            <th>To Station</th>
+            <th>Available</th>
+            <th>Fare (INR)</th>
+        </tr>
+
+        <!-- These rows can be dynamically generated using a backend language -->
+        <tr>
+            <td>12345</td>
+            <td>Rajdhani Express</td>
+            <td>New Delhi</td>
+            <td>Mumbai</td>
+            <td>Yes</td>
+            <td>1500</td>
+        </tr>
+        <tr>
+            <td>54321</td>
+            <td>Shatabdi Express</td>
+            <td>Chennai</td>
+            <td>Bangalore</td>
+            <td>No</td>
+            <td>900</td>
+        </tr>
+
+    </table>
+</body>
+</html>

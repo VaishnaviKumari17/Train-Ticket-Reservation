@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="ISO-8859-1">
+<title>E-Trains - Update Train</title>
+<link rel="stylesheet" href="UserHome_Css.css">
+</head>
+<body>
+	<header>
+		<h1 class="hd">National Ticket Booking Spot</h1>
+		<nav class="menu-nav">
+			<a href="AdminHome.html">Home</a>
+			<a href="adminviewtrainfwd">View Trains</a>
+			<a href="adminsearchtrainfwd">Search By TrainNo</a>
+			<a href="addtrainfwd">Add Train</a>
+			<a href="canceltrainfwd">Delete Train</a>
+			<a href="updatetrain">Update Train Details</a>
+			<a href="adminlogout">Logout</a>
+		</nav>
+	</header>
+	
+	<section class="tab">
+		<p class="menu">Welcome back, Admin! Update your train details below.</p>
+	</section>
+	
+	<section class="main">
+		<h2 class="menu">Update Train</h2>
+		<form action="adminupdatetrain" method="post" class="tab red">
+			<label for="trainnumber">Train Number:</label><br />
+			<input type="text" id="trainnumber" name="trainnumber" required><br /><br />
+			
+			<input type="submit" value="SEARCH TRAIN">
+		</form>
+	</section>
+</body>
+</html>

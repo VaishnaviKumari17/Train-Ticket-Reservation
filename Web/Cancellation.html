@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="ISO-8859-1">
+<title>E-Trains - Cancel Train</title>
+<link rel="stylesheet" href="UserHome_Css.css">
+</head>
+<body>
+	<header>
+		<h1 class="hd">National Ticket Booking Spot</h1>
+		<nav class="menu-nav">
+			<a href="AdminHome.html">Home</a>
+			<a href="adminviewtrainfwd">View Trains</a>
+			<a href="adminsearchtrainfwd">Search By TrainNo</a>
+			<a href="addtrainfwd">Add Train</a>
+			<a href="canceltrainfwd">Delete Train</a>
+			<a href="updatetrain">Update Train Details</a>
+			<a href="adminlogout">Logout</a>
+		</nav>
+	</header>
+
+	<section class="tab">
+		<p class="menu">Welcome Admin! Manage train cancellations here.</p>
+	</section>
+
+	<section class="main">
+		<h2 class="menu">Cancel a Train</h2>
+	</section>
+
+	<form action="admincanceltrain" method="post" class="tab" style="max-width: 300px; margin: auto;">
+		<label for="trainno">Train Number:</label><br />
+		<input type="text" id="trainno" name="trainno" required><br /><br />
+		<input type="submit" value="Cancel Train">
+	</form>
+	<br />
+</body>
+</html>

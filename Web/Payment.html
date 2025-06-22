@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="ISO-8859-1">
+<title>Payment Portal</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<style>
+  .card-logos {
+    max-width: 480px;
+    margin: 0 auto 15px auto;
+    text-align: center;
+  }
+  .card-logos img {
+    width: 23%;
+    margin: 0 6px;
+    vertical-align: middle;
+  }
+  header {
+    background-color: #e9ecef;
+    padding: 10px 0;
+    margin-bottom: 20px;
+  }
+  .nav-links {
+    text-align: center;
+  }
+  .nav-links .home {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  .nav-links a {
+    font-weight: 600;
+    color: #2c3e50;
+    text-decoration: none;
+  }
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  .hd h1 {
+    text-align: center;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    color: #28a745;
+  }
+  .panel-footer input[type="submit"] {
+    background-color: #28a745;
+    border-color: #28a745;
+  }
+</style>
+<link rel="stylesheet" href="UserHome_Css.css">
+</head>
+<body>
+
+<div class="hd">
+  <h1>Secure Card Payment Gateway</h1>
+</div>
+
+<header class="nav-links">
+  <div class="home"><a href="userhome">Home</a></div>
+  <div class="home"><a href="userviewtrainfwd">View Trains</a></div>
+  <div class="home"><a href="trainbwstnfwd">Trains Between Stations</a></div>
+  <div class="home"><a href="bookingdetails">Booking History</a></div>
+  <div class="home"><a href="fareenqfwd">Fare Enquiry</a></div>
+  <div class="home"><a href="useravailfwd">Seat Availability</a></div>
+  <div class="home"><a href="usersearchtrain">Search By TrainNo</a></div>
+  <div class="home"><a href="userprofile">Profile</a></div>
+  <div class="home"><a href="userlogout">Logout</a></div>
+</header>
+
+<!-- Payment Form -->
+<div class="container" style="margin-top: 40px;">
+  <div class="row">
+    <div class="col-xs-12 col-md-6 col-md-offset-3">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="card-logos">
+            <img src="https://cdn0.iconfinder.com/data/icons/credit-card-debit-card-payment-PNG/128/Mastercard-Curved.png" alt="Mastercard">
+            <img src="https://cdn0.iconfinder.com/data/icons/credit-card-debit-card-payment-PNG/128/Discover-Curved.png" alt="Discover">
+            <img src="https://cdn0.iconfinder.com/data/icons/credit-card-debit-card-payment-PNG/128/Paypal-Curved.png" alt="Paypal">
+            <img src="https://cdn0.iconfinder.com/data/icons/credit-card-debit-card-payment-PNG/128/American-Express-Curved.png" alt="American Express">
+          </div>
+        </div>
+        <form role="form" action="booktrains" method="post">
+          <div class="panel-body">
+            <div class="form-group">
+              <label for="cardNumber">Card Number</label>
+              <div class="input-group">
+                <input type="tel" id="cardNumber" name="cardNumber" class="form-control" placeholder="Enter card number" required />
+                <span class="input-group-addon"><span class="glyphicon glyphicon-credit-card"></span></span>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-xs-7">
+                <div class="form-group">
+                  <label for="expiryDate">Expiration Date</label>
+                  <input type="tel" id="expiryDate" name="expiryDate" class="form-control" placeholder="MM / YY" required />
+                </div>
+              </div>
+              <div class="col-xs-5">
+                <div class="form-group">
+                  <label for="cvv">CVV</label>
+                  <input type="tel" id="cvv" name="cvv" class="form-control" placeholder="CVC" required />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="cardHolderName">Cardholder Name</label>
+              <input type="text" id="cardHolderName" name="cardHolderName" class="form-control" placeholder="Name on card" required />
+            </div>
+          </div>
+          <div class="panel-footer">
+            <input type="submit" value="Submit Payment" class="btn btn-success btn-lg btn-block" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- jQuery and Bootstrap scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
